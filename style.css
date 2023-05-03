@@ -1,0 +1,163 @@
+:root {
+    --Blue: hsl(223, 87%, 63%);
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+*{
+    font-family: Libre Franklin, sans-serif;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-weight: 300;
+    color: var(--Gray);
+    text-align: center;
+    
+}
+
+h1 b {
+    color: black;
+}
+
+h2{
+    font-weight: 100;
+    font-size: 15px;
+    text-align: center;
+    color: var(--Very-Dark-Blue);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	position: relative;
+}
+
+.img-div {
+    margin: 2rem 5rem;
+}
+
+img {
+    width: 100%;
+}
+
+input {
+    border-radius: 20px;
+    border: 1px solid var(--Pale-Blue);
+    padding: 10px 10px;
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+}
+
+::placeholder {
+    color: var(--Pale-Blue);
+    margin-left: 10px;
+}
+
+button {
+    color:white;
+    font-weight: bold;
+    background-color: var(--Blue);
+    border: none;
+    padding: 10px 10px;
+    display: block;
+    margin: 0 auto;
+    width: 65%;
+    border-radius: 20px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.icons {
+    text-align: center;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+    text-decoration: none;
+    letter-spacing: 1.5rem;
+    color: var(--Blue);
+    /* border: 1px solid var(--Pale-Blue); */
+    border-radius: 50%;
+    padding: 5px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+i {
+    display: flex;
+    justify-content: center;
+}
+
+.copyright{
+    color: var(--Gray);
+    font-size: 15px;
+    margin-top: 2rem;
+}
+
+footer{
+    text-align: center;
+}
+
+.error {
+    color: var(--Light-Red);
+    font-style: italic;
+    font-size: 11px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Media */
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 35px;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+    }
+
+    .img-div{
+        width: 45rem;
+    }
+
+    input{
+        /* padding-top: 5px; */
+        width: 100%;
+        margin-right: 1rem;
+        
+    }
+
+    button {
+        margin-top: 0;
+        /* width: 9rem; */
+    }
+
+    /* .error{
+        transform: translateX(-50px);
+    } */
+}
